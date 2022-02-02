@@ -1,9 +1,9 @@
-print("Test push")
 extends KinematicBody2D
 
 var score : int = 0
 var pushtest : int = 1
 var speed : int = 200
+var speedy : int = 20
 var jumpForce : int = 600
 var gravity : int = 800
 var vel : Vector2 = Vector2()
@@ -15,5 +15,8 @@ func _physics_process(delta):
 		vel.x -= speed
 	if Input.is_action_pressed("move_right"):
 		vel.x += speed
+	if Input.is_action_pressed("move_up"):
+		vel.y -= speedy
+	if Input.is_action_pressed("move_down"):
+		vel.y += speedy
 	vel = move_and_slide(vel, Vector2.UP)
-
