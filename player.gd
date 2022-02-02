@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 var score : int = 0
-var pushtest : int = 0
+var pushtest : int = 1
 var speed : int = 200
 var jumpForce : int = 600
 var gravity : int = 800
