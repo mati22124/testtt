@@ -14,4 +14,6 @@ func _physics_process(delta):
 		vel.x -= speed
 	if Input.is_action_pressed("move_right"):
 		vel.x += speed
+	if Input.is_action_pressed("move_up"):
+		vel.x -= speed
 	vel = move_and_slide(vel, Vector2.UP)
