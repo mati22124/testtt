@@ -10,17 +10,18 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "KinematicBody2D",
-"class": "actor",
+"class": "ctor",
 "language": "GDScript",
 "path": "res://ctors/ctor.gd"
 } ]
 _global_script_class_icons={
-"actor": ""
+"ctor": ""
 }
 
 [application]
 
 config/name="test"
+run/main_scene="res://ctors/plyer.tscn"
 config/icon="res://icon.png"
 
 [input]
